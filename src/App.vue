@@ -4,6 +4,12 @@
             <div class="menu" :class="{menu_sel: index == menu_sel_index}" v-for="(item, index) in menus"
                  @click="clickMenu(index)">{{item}}
             </div>
+
+            <!-- 首页组件 -->
+            <!-- 文章列表组件 -->
+            <!-- 分类组件 -->
+            <!-- 关于组件 -->
+
         </div>
     </div>
 </template>
@@ -69,9 +75,13 @@
         border-bottom: 4px solid white;
         border-top: 2px solid white;
     }
+    .menu:hover{
+        color: #42b983;
+    }
 
     /* 被选中的item */
     .menu_sel {
         border-bottom: 4px solid #42b983;
+        color: #42b983;
     }
 </style>
